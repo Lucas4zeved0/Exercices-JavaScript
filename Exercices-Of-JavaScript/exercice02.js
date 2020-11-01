@@ -1,34 +1,34 @@
-function classificarTriangulo(lado1, lado2, lado3) {
+function classifyTriangle(side1, side2, side3) {
 
-    if(lado1 == lado2 && lado2 == lado3) {
-        return 'Este triangulo é equilátero, pois todos os lados são iguais'
+    if(side1 == side2 && side2 == side3) {
+        return 'This triangle is equilateral, since everyone the sides be equals.'
         
-    } else if(lado1 == lado2 || lado1 == lado3 || lado2 == lado3){
-        return 'Este triangulo é isósceles, pois possui somente dois lados iguais'
+    } else if(side1 == side2 || side1 == side3 || side2 == side3){
+        return 'This triangle is isosceles, since have only two sides equals.'
 
     } else {
-        return 'Este é um triangulo escaleno, pois não possui lados iguais'
+        return 'This triangle is scalene, since not have sides equals.'
 
     }
 }
 
-// Testando triangulo equilátero 
-console.log('========================================================')
-classificarTriangulo(1, 1, 1)
-classificarTriangulo(4, 4, 4)
-classificarTriangulo(7, 7, 7)
-console.log('========================================================')
+// Testing triangle equilateral
+console.log('====================Equilateral========================')
+console.log(classifyTriangle(1, 1, 1))
+console.log(classifyTriangle(4, 4, 4))
+console.log(classifyTriangle(7, 7, 7))
+console.log('=======================================================')
 
-// Testando triangulo isósceles
-console.log('========================================================')
-classificarTriangulo(2, 1, 1)
-classificarTriangulo(1, 2, 1)
-classificarTriangulo(1, 1, 2)
-console.log('========================================================')
+// Testing triangle isosceles
+console.log('=====================Isosceles=========================')
+console.log(classifyTriangle(2, 1, 1))
+console.log(classifyTriangle(1, 2, 1))
+console.log(classifyTriangle(1, 1, 2))
+console.log('=======================================================')
 
-// Testando triangulo escaleno
-console.log('========================================================')
-classificarTriangulo(3, 2, 1)
-classificarTriangulo(5, 4, 3)
-classificarTriangulo(9, 5, 7)
-console.log('========================================================')
+// Testing triangle scalene
+console.log('=====================Scalene=========================')
+console.log(classifyTriangle(3, 2, 1))
+console.log(classifyTriangle(5, 4, 3))
+console.log(classifyTriangle(9, 5, 7))
+console.log('=====================================================')
