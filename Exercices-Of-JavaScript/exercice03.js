@@ -1,12 +1,11 @@
-function Exponenciacao(base, expoente) {
-    const calculandoExponenciacao = base ** expoente
-
-    if(Number.isInteger(calculandoExponenciacao) == true){
-    console.log(`O valor dessa exponenciação é ${calculandoExponenciacao.toFixed(0)}`)
+function exponentiation(base, exponent) {
+    const calculatingExponentiation = base ** exponent
+    if(Number.isInteger(calculatingExponentiation) == true){
+    console.log(`The value this exponentiation is ${calculatingExponentiation.toFixed(0)}`)
     } else {
-        console.log(`O valor dessa exponenciação é ${calculandoExponenciacao.toFixed(2)}`)
+        console.log(`the value this exponentiation is ${calculatingExponentiation.toFixed(2)}`)
     }
 }
 
-Exponenciacao(2, 2)
-Exponenciacao(2.34, 4.12)
+exponentiation(2, 2)
+exponentiation(2.34, 4.12)
