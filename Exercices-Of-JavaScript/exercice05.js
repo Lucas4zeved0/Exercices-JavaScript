@@ -1,6 +1,6 @@
-function formatarValor(valor){
-    console.log(`O valor decimal ${valor} formatado fica = R$${valor.toFixed(2).toString().replace(".", ",")}`)
+function formatValueDecimal(value){
+    console.log(`The value decimal ${value} formatted is = $ ${value.toFixed(2).toString().replace(".", ",")}`)
 }
 
-formatarValor(2.0090404939038475849)
-formatarValor(0.1 + 0.2)
+formatValueDecimal(2.0090404939038475849)
+formatValueDecimal(0.1 + 0.2)
